@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+    <div class="all">
+        <div id="content">
+            <section class="sct_1">
+                <div class="card_0">
+                    <div class="crd_1">
+                        <img src="card-logo.svg" alt="#">
+                        <p id="rlt_1">0000 0000 0000 0000</p>
+                        <div class="p_bail">
+                            <p id="rlt_2"> JANE APPLESEED </p>
+                            <p id="rlt_3">00/00</p>
+                        </div>
+                    </div>
+                    <div class="crd_2">
+                        <p id="rlt_4">000</p>
+                    </div>
+                </div>
+            </section>
+            <section id="sct_2">
+                <form action="#">
+
+                    <p>
+                        <label for="ipt_1"> Cardholder Name </label> <br>
+                        <div class="wrapper">
+                            <input type="text" required id="ipt_1" placeholder=" e.g. Jane Appleseed">    
+                        </div>
+                    </p>
+
+                    <p>
+                        <label for="ipt_2"> Card Number</label> <br>
+                        <div class="wrapper">
+                            <input type="text" required id="ipt_2" placeholder=" e.g. 1234 5678 9123 0000 ">
+                        </div>
+                    </p>
+
+                    <div class="ipt_A">
+
+                        <div>
+                            <label for="ipt_3">Exp. Date (MM/YY)</label> <br>
+                            <div class="wpr_one">
+                                <div class="wrapper">
+                                    <input type="text" required class="ipt_3" id="ipt_3a" placeholder="MM">
+                                </div>
+                                <div class="wrapper">
+                                    <input type="text" required class="ipt_3" id="ipt_3b"  placeholder="YY">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="p_4">
+                            <label for="ipt_4">CVC</label> <br>
+                            <div class="wrapper">
+                                <input type="text" required id="ipt_4" placeholder="e.g. 123 ">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value=" Confirm " id="valid">
+                </form>
+            </section>
+
+            <section id="content_2">
+                <img src="icon-complete.svg" alt="">
+                <h1>THANK YOU!</h1>
+                <p>We've added your card details</p>
+                <button>Continue</button>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

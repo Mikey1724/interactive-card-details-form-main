@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url(bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+.sct_1{
+    color: white;
+}
+.p_bail{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.crd_1{
+    width: 325px;
+    height: 170px;
+    padding: 25px;
+    background-image: url(bg-card-front.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 100px 0px 50px 50px;
+}
+.crd_1 p{
+    margin: 40px 0 0 0;
+}
+.crd_2{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 325px;
+    height: 170px;
+    background-image: url(bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 0px 0px 0px 150px;
+}
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#rlt_1{
+    font-size: 22px;
+}
+#ipt_1, #ipt_2, .ipt_3, #ipt_4{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    border: 2px solid hsl(270, 3%, 87%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.wrapper{
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    border-radius: 5px;
+}
+#ipt_1:hover , #ipt_2:hover , .ipt_3:hover , #ipt_4:hover {
+    border-color: transparent;
+}
+.wrapper:hover{
+    padding: 1px;
+}
+#ipt_1,#ipt_2{
+    width: 300px;
+    height: 15px;
+    padding: 10px;
+}
+.ipt_3{
+    width: 40px;
+    height: 15px;
+    padding: 10px;
+}
+#ipt_4{
+    width: 140px;
+    height: 15px;
+    padding: 10px;
+}
+input[type="text"]:hover{
+    border-color: hsl(278, 94%, 30%);
+}
+#p4{
+    margin-left: 10px;
+}
+.ipt_A,.wpr_one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wpr_one .wrapper{
+    margin-right: 10px;
+}
+label{
+    font-size: 12px;
+}
+#valid{
+    width: 330px;
+    height: 40px;
+    padding: 15px 0px 30px 0px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#content_2{
+    display: none;
+    text-align: center;
+}
+#content_2 p{
+    color: hsl(279, 6%, 55%);
+}
+#content_2 button{
+    cursor: pointer;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 30px 0 0 0;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+}
+@media screen and  (max-width: 890px){
+    .crd_2{
+        margin: 0px;
+    }
+    .crd_1{
+        margin: 100px 0px 50px auto;
+    }
+   
+}
+
+@media screen and  (max-width: 855px){
+  /*  .sct_1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*/
+    #sct_2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    .card_0{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+       
+    }
+    .ipt_A{
+        justify-content: left;
+    }
+    .crd_1, .crd_2{
+        margin: 0px;
+    }
+    #content{
+        display: block;
+    }
+    #content_2{
+        margin: 30px;
+    }
+    body{
+        background-image: none;
+    }
+    .sct_1{
+        background-image: url(bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+    }
+    .crd_1{
+        margin: -95px 120px 0 0;
+        padding: 15px;
+        z-index: 1;
+    }
+}
+@media screen and  (max-width: 500px){
+    #content_2{
+        margin: 30px;
+    }
+    .crd_1{
+        width: 60vw;
+        height: auto;
+        margin: -95px 100px 0 0;
+    }
+    .crd_2{
+        width: 60vw;
+        height: 30vw;
+        margin: 0 0 0 70px;
+    }
+    .crd_1 p{
+        margin: 25px 0 0 0;
+    }
+}
+@media screen and (max-width: 420px) {   
+    #rlt_1{
+        font-size: 18px;
+    }
+}
