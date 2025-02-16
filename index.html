@@ -26,46 +26,61 @@
                 </div>
             </section>
             <section id="sct_2">
-                <form action="#">
+                <form action="#" id="form">
 
                     <p>
-                        <label for="ipt_1"> Cardholder Name </label> <br>
-                        <div class="wrapper">
-                            <input type="text" required id="ipt_1" placeholder=" e.g. Jane Appleseed">    
+                        <label for="ipt_1">CARDHOLDER NAME</label> <br>
+                        <div class="wrapper2">
+                            <div class="wrapper">
+                                <input type="text" id="ipt_1" placeholder=" e.g. Jane Appleseed">   
+                            </div>
+                            <small>None</small>
                         </div>
                     </p>
 
                     <p>
-                        <label for="ipt_2"> Card Number</label> <br>
-                        <div class="wrapper">
-                            <input type="text" required id="ipt_2" placeholder=" e.g. 1234 5678 9123 0000 ">
+                        <label for="ipt_2"> CARD NUMBER</label> <br>
+                        <div class="wrapper2">
+                            <div class="wrapper">
+                                <input type="text" id="ipt_2" placeholder=" e.g. 1234 5678 9123 0000 ">
+                            </div>
+                            <small>None</small>
                         </div>
                     </p>
 
                     <div class="ipt_A">
 
                         <div>
-                            <label for="ipt_3">Exp. Date (MM/YY)</label> <br>
+                            <label for="ipt_3">EXP. DATE (MM/YY)</label> <br>
                             <div class="wpr_one">
-                                <div class="wrapper">
-                                    <input type="text" required class="ipt_3" id="ipt_3a" placeholder="MM">
+                                <div class="wrapper2">
+                                    <div class="wrapper">
+                                        <input type="text" class="ipt_3" id="ipt_3a" placeholder="MM">
+                                    </div>
+                                    <small>None</small>
                                 </div>
-                                <div class="wrapper">
-                                    <input type="text" required class="ipt_3" id="ipt_3b"  placeholder="YY">
+                                <div class="wrapper2">
+                                    <div class="wrapper">
+                                        <input type="text" class="ipt_3" id="ipt_3b"  placeholder="YY">
+                                    </div>
+                                    <small>None</small>
                                 </div>
                             </div>
                         </div>
 
                         <div id="p_4">
                             <label for="ipt_4">CVC</label> <br>
-                            <div class="wrapper">
-                                <input type="text" required id="ipt_4" placeholder="e.g. 123 ">
+                            <div class="wrapper2">
+                                <div class="wrapper">
+                                    <input type="text" id="ipt_4" placeholder="e.g. 123 ">
+                                </div>
+                                <small>None</small>
                             </div>
                         </div>
 
                     </div>
 
-                    <input type="submit" value=" Confirm " id="valid">
+                    <button type="submit" id="valid">Confirm</button>
                 </form>
             </section>
 

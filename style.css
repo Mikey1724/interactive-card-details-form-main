@@ -54,9 +54,8 @@ body{
 }
 #ipt_1, #ipt_2, .ipt_3, #ipt_4{
     outline: none;
-    border: none;
     border-radius: 3px;
-    border: 2px solid hsl(270, 3%, 87%);
+    border: 1px solid hsl(270, 3%, 87%);
     font-weight: bold;
     cursor: pointer;
 }
@@ -66,7 +65,7 @@ body{
     background: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
     border-radius: 5px;
 }
-#ipt_1:hover , #ipt_2:hover , .ipt_3:hover , #ipt_4:hover {
+#ipt_1:hover , #ipt_2:hover , #ipt_3a:hover , #ipt_3b:hover, #ipt_4:hover {
     border-color: transparent;
 }
 .wrapper:hover{
@@ -134,6 +133,25 @@ label{
     border-radius: 5px;
     background-color: hsl(278, 68%, 11%);
 }
+#form p{
+    margin: 0;
+}
+.wrapper2 small{
+    display: block;
+    font-size: 10px;
+    visibility: hidden;
+    padding: 5px 0;
+}
+.wrapper.error{
+    background: none;
+}
+.wrapper.error #ipt_1, .wrapper.error #ipt_2, .wrapper.error #ipt_3a, .wrapper.error #ipt_3b, .wrapper.error #ipt_4{
+    border-color: hsl(0, 100%, 66%);
+}
+.wrapper2.error small{
+    color: hsl(0, 100%, 66%);
+    visibility: visible;
+}
 @media screen and  (max-width: 890px){
     .crd_2{
         margin: 0px;
@@ -144,7 +162,7 @@ label{
    
 }
 
-@media screen and  (max-width: 855px){
+@media screen and  (max-width: 875px){
   /*  .sct_1{
         display: flex;
         align-items: center;
@@ -211,5 +229,8 @@ label{
 @media screen and (max-width: 420px) {   
     #rlt_1{
         font-size: 18px;
+    }
+    #content_2 button{
+        width: 85vw;
     }
 }
